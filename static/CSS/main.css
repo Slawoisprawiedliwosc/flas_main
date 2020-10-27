@@ -1,4 +1,48 @@
-body {
-    margin 0;
-    font-family: sans-serif;
+* {
+  margin: auto;
 }
+
+body {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/6/61/1968_GT500_and_GT350.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: relative;
+/*   background-attachment: fixed; */
+    font-family:sans-serif;
+}
+
+#intro {
+  text-align: center;
+  text-shadow: 2px 2px 10px grey;
+  box-shadow: -1px 25px 10px 0px rgba(0,0,0,0.75);
+  background: linear-gradient(-135deg, rgb(3, 252, 252), rgb(0, 255, 0), yellow, red);
+  padding: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+#user-input {
+  background-color: black;
+  margin: 0 50em ;
+  padding: 1em 0 1.5em 0;
+  text-align: center;
+  color: white;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-group {
+  font-family: "Yellowtail", cursive;
+}
+
+#submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
