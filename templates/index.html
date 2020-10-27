@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Task Master</h1>
+    <form method="POST">
+      <label for="model">Model:</label><br>
+      <input type="text" id="model" name="modeln"><br>
+      <label for="brand">Brand:</label><br>
+      <input type="text" id="brand" name="brandn"><br>
+        <label for="capacity">Capacity:</label><br>
+        <input type="text" id="capacity" name="capacity"><br>
+        <label for="course">Courese:</label><br>
+        <input type="text" id="course" name="course"><br>
+        <label for="year">Year:</label><br>
+        <input type="text" id="year" name="year"><br>
+        <input type="submit" name="Send spe">
+    </form>
+</div>
+{% endblock %}
+
