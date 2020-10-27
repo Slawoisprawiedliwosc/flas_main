@@ -4,7 +4,43 @@
 {% endblock %}
 
 {% block body %}
-<div class="content">
+
+
+
+<div id="intro">
+        <h1 id="title">Mat/Tym Project</h1>
+      </div>
+      
+      <form id="user-input">
+        <div class="form-group">
+             <label>Brand</label>
+               <input id="brand" type="text" name="brand" placeholder="Enter brand name..." required>
+        </div>
+        
+        <div class="form-group">
+             <label id="model-label">Model</label>
+               <input id="model" type="text" name="model" placeholder="Enter model name..." required>
+        </div>
+        
+         <div class="form-group">
+             <label>Capacity</label>
+               <input id="capacity" type="text" name="capacity" placeholder="Enter capacity..." required>
+        </div>
+        
+         <div class="form-group">
+             <label>Courese</label>
+               <input id="courese" type="text" name="courese" placeholder="Enter courese..." required>
+        </div>
+        
+        <div class="form-group">
+             <label>Year</label>
+               <input id="year" type="text" name="year" placeholder="Enter year..." required>
+          <button type="submit" id="submit">Submit</button>
+        </div>
+        
+      </form>
+
+<!-- <div class="content">
     <h1>Task Master</h1>
     <form method="POST">
       <label for="model">Model:</label><br>
@@ -19,6 +55,6 @@
         <input type="text" id="year" name="year"><br>
         <input type="submit" name="Send spe">
     </form>
-</div>
+</div> -->
 {% endblock %}
 
