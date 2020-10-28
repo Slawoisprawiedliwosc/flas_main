@@ -23,8 +23,8 @@ class Todo(db.Model):
 @app.route("/", methods=['POST', 'GET'])
 def index():
     if request.method == "POST":
-        brand = request.form["modeln"]
-        model = request.form["brandn"]
+        brand = request.form["brand"]
+        model = request.form["model"]
         capacity = request.form["capacity"]
         course = request.form["course"]
         year = request.form["year"]
@@ -38,7 +38,7 @@ def index():
         full_sample = np.concatenate((sample_numerical, sample_encoded), axis=1)
         m_price = XGboost_model.predict(full_sample)
         price = ceil(m_price[0])
-        return render_template('data.html', motorbike=pricegit)
+        return render_template('data.html', motorbike=price)
     else:
         return render_template('index.html')
 
