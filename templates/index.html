@@ -1,16 +1,16 @@
 <!DOCtype HTML>
 <html>
   <head>
-  <title>Mat/Tym Project</title>
+  <title>Predicted Price of Motorbike</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link rel="stylesheet" href="/static/css/main.css">
 </head>
   <body>
     <main>
 
 
 <div id="intro">
-        <h1 id="title">Mat/Tym Project</h1>
+        <h1 id="title">Predicted Price of Motorbike</h1>
       </div>
       
       <form method = "POST" id="user-input">
@@ -37,8 +37,12 @@
         <div class="form-group">
              <label>Year</label>
                <input id="year" type="text" name="year" placeholder="Enter year..." required>
-          <button type="submit" id="submit">Submit</button>
         </div>
+        
+           <div class="popup" onclick="">
+             <button type="submit" id="submit">Submit</button>
+             <span class="popuptext" id="resultpopup"><h1 class="text-center">My desired motorbike is {{motorbike}}</span>
+           </div> 
         
       </form>
 
