@@ -3,29 +3,29 @@
 }
 
 body {
-  background: url(https://upload.wikimedia.org/wikipedia/commons/6/61/1968_GT500_and_GT350.JPG);
+  background: url(https://images8.alphacoders.com/851/thumb-1920-851566.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: relative;
 /*   background-attachment: fixed; */
-    font-family:sans-serif;
 }
 
 #intro {
   text-align: center;
-  text-shadow: 2px 2px 10px grey;
+  text-shadow: 2px 2px 15px #000;;
   box-shadow: -1px 25px 10px 0px rgba(0,0,0,0.75);
-  background: linear-gradient(-135deg, rgb(3, 252, 252), rgb(0, 255, 0), yellow, red);
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  color: #c10016;
   padding: 1.5em;
   margin-bottom: 2.5em;
 }
 
 #user-input {
-  background-color: black;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   margin: 0 50em ;
   padding: 1em 0 1.5em 0;
   text-align: center;
-  color: white;
+  color: #fff;
 }
 
 label {
@@ -37,6 +37,49 @@ label {
 
 .form-group {
   font-family: "Yellowtail", cursive;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 80px 30px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -110px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s
+}
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 #submit {
