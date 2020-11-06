@@ -38,7 +38,7 @@ def index():
         full_sample = np.concatenate((sample_numerical, sample_encoded), axis=1)
         m_price = XGboost_model.predict(full_sample)
         price = ceil(m_price[0])
-        return render_template('data.html', motorbike=price)
+        return render_template('popup', motorbike=price)
     else:
         return render_template('index.html')
 
