@@ -1,0 +1,7 @@
+Flask==1.1.2
+python-dateutil==2.8.1
+numpy==1.18.5
+joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
+mpmath==1.1.0
+SQLAlchemy @ file:///C:/ci/sqlalchemy_1593445271541/work
+xgboost==1.2.1
