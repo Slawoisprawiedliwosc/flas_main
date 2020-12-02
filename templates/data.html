@@ -1,10 +1,28 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Mat/Tym Project</title>
+  <title>Predicted Price of Motorbike - Result</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css/result.css">
 </head>
+
 <body>
-    <h1 class="text-center">My desired motorbike is {{ motorbike}}</h1>
+  <main>
+
+    <div id="intro">
+      <h1 id="title">Predicted Price of Motorbike</h1>
+    </div>
+    <section>
+      <div id="result">
+        <p id="result-message">Your predicted price for motorbike is: {{motorbike}}</p>
+          <a href="index.html" id="go-back-link">
+            <div id="arrow"></div>GO BACK
+          </a>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
